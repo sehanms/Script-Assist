@@ -29,5 +29,6 @@ This project is a React-based application built using:
 git clone <your-repo-url>
 cd <your-project-folder>
 
-![image](https://github.com/user-attachments/assets/a0af4ae9-36b0-4959-aa06-f0cef6e453f7)
+![image](https://github.com/user-attachments/assets/a00d5369-5787-4878-84e8-b03d73e4bcb4)
+
 

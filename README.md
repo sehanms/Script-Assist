@@ -2,7 +2,7 @@
 🚀 React Developer Technical Exercise
 This project is a React-based application built using:
 
-React / React DOM
+React / React DOM                                                                                                                
 React Router
 Mantine UI
 React Query

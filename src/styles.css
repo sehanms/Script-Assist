@@ -1,0 +1,169 @@
+/* Import Star Wars-style font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Apply full-page dark space theme */
+body {
+    background: radial-gradient(circle at center, #10131b, #000000); /* Galactic Space Background */
+    color: #EDEDED;
+    font-family: 'Orbitron', sans-serif; /* Futuristic Star Wars font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Starfield Animation */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdG9jNmN0dWZqOTZmMmw0MDJ2NWV0bTR3dThmY2V5bGc5anl2dTltYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VzBaUcHFKgxhkQqxZd/giphy.gif') repeat;
+    /* background: url('https://media.giphy.com/media/dwPXh7CwZ8Gqg/giphy.gif') repeat; */
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Centered container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Glowing Star Wars Card */
+.card {
+    background: rgba(31, 31, 31, 0.95); /* Deep Space Gray */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5); /* C-3PO Gold glow */
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: wheat;
+}
+
+/* Lightsaber Effect Button */
+/* Move the button down */
+.primary-button {
+    background-color: #1E90FF; /* Jedi Blue */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(30, 144, 255, 0.7);
+    font-weight: bold;
+    margin-top: 30px; /* Moves the button lower */
+}
+
+
+/* Lightsaber Glow Hover Effect */
+.primary-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 0px 20px rgba(30, 144, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Sith Red for Error Alerts */
+.error-message {
+    font-size: 14px;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: rgba(255, 0, 0, 0.7); /* Sith Red */
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Star Wars Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(31, 31, 31, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3);
+    color: rgba(30, 144, 255, 0.7);
+
+}
+
+/* Table Headers */
+.table-header {
+    background: #FFD700; /* C-3PO Gold */
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+/* Table Rows */
+.table-row {
+    border-bottom: 1px solid #444;
+    
+}
+
+.table-row:hover {
+    background-color: #333;
+    transition: background 0.3s ease-in-out;
+    color: white;
+}
+
+/* Neon Glowing Hyperlink */
+.link {
+    color: #1E90FF;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    color: #FFD700;
+    text-shadow: 0px 0px 10px #FFD700;
+}
+
+/* Fade-in Effect */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Glowing Title */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #FFD700;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.7);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.5);
+    }
+    to {
+        text-shadow: 0px 0px 20px rgba(255, 215, 0, 1);
+    }
+}

@@ -1,5 +1,5 @@
 # Script-Assist
-🚀 React Developer Technical Exercise
+🚀 React Developer Technical Exercise                                                                                                                                                                              
 This project is a React-based application built using:
 
 React / React DOM                                                                                                                

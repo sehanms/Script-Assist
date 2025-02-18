@@ -6,6 +6,7 @@ export default defineConfig({
 		port: 5175
 	},
 	plugins: [react()],
+	base: "/Script-Assist/",
 	build: {
 		outDir: 'build'
 	}

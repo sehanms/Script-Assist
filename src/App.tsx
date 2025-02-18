@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import Login from './pages/Login';
 import ResourceList from './pages/ResourceList';
 import ResourceDetail from './pages/ResourceDetail';
-import {HashRouter} from "react-router-dom"
 
 export default function App() {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
@@ -17,7 +16,7 @@ export default function App() {
   }, [isAuthenticated, navigate]);
 
   return (
-    <HashRouter>
+  
     <Routes>
       <Route path="/login" element={<Login />} />
       {isAuthenticated ? (
@@ -29,6 +28,6 @@ export default function App() {
         <Route path="*" element={<Navigate to="/login" replace />} />
       )}
     </Routes>
-    </HashRouter>
+
   );
 }
